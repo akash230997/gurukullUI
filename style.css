@@ -6,7 +6,7 @@
 
 html {
   background: linear-gradient(rgba(34, 41, 65, 0.45), rgba(46, 55, 86, 0.45)),
-    url("http://gurukulgpt.s3-website.ap-south-1.amazonaws.com/ai_art.png");
+    url("./image/ai_art.png");
   background-size: cover;
   background-position: center;
   height: 100%;
