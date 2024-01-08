@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="shortcut icon" href="./image/Screenshot 2024-01-05 190106.png" type="image/x-icon">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Roboto+Mono:300,400");
 
@@ -52,6 +53,7 @@
             font-size: 4rem !important;
             letter-spacing: 15px;
             color: #ffffff !important;
+            /* border: 1px solid red; */
         }
 
         .hero-body .subtitle .countdown {
@@ -85,15 +87,16 @@
         .footerContainer {
             border: 1.5px solid gray;
             border-radius: 10px;
-            width: 80%;
+            width: 50%;
+            margin-top: 50px;
             height: 100px;
-            position: relative;
-            top: -60px;
+            /* position: relative;
+  top: -60px; */
             display: flex;
             justify-content: center;
             align-items: center;
             transition: all 1s;
-            background-color: #abadb118;
+            background-color: #88898a5e;
         }
 
         .container2 ul li a {
@@ -141,16 +144,19 @@
         .Company_Nav {
             font-family: "Montserrat", sans-serif;
             font-weight: 600 !important;
-            font-size: 1.5rem !important;
+            font-size: 2.5rem !important;
             letter-spacing: 15px;
             color: #ffffff !important;
             position: relative;
-            top: -80px;
+            top: -180px;
         }
 
         .typed-text {
-            color: rgb(103, 103, 238);
-            font-weight: 700;
+            /* color: rgb(103, 103, 238); */
+            color: #fbf9f1;
+            font-weight: 900;
+            font-size: 1.5rem;
+            text-shadow: #fbf9f1 0px 0px 20px;
         }
 
         .top_title {
@@ -166,7 +172,37 @@
             /* letter-spacing: 15px; */
             color: #ffffff !important;
             text-decoration: none;
-            animation: tracking-in-contract-bck-bottom 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+            animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @-webkit-keyframes focus-in-contract {
+            0% {
+                letter-spacing: 1em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes focus-in-contract {
+            0% {
+                letter-spacing: 1em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
         }
 
         .pp2 {
@@ -329,13 +365,92 @@
         .card:hover {
             background-position: top;
         }
+
+        @media only screen and (min-width: 0px) and (max-width: 499px) {
+            ul {
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .Company_Nav {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600 !important;
+                font-size: 2.2rem !important;
+                letter-spacing: 15px;
+                color: #ffffff !important;
+                position: relative;
+                left: 10px;
+                top: -80px;
+            }
+
+            .typed-text {
+                font-size: 1.4rem;
+            }
+
+            .container {
+                padding: 30px 0;
+                margin-top: -40px;
+            }
+
+            .footerContainer {
+                border: 1.5px solid gray;
+                border-radius: 10px;
+                width: 90%;
+                margin-top: 50px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 1s;
+                background-color: #88898a5e;
+                animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            }
+
+            @-webkit-keyframes slide-in-fwd-center {
+                0% {
+                    -webkit-transform: translateZ(-1400px);
+                    transform: translateZ(-1400px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes slide-in-fwd-center {
+                0% {
+                    -webkit-transform: translateZ(-1400px);
+                    transform: translateZ(-1400px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+
+            .pp2 {
+                font-family: "Montserrat", sans-serif;
+                /* letter-spacing: 15px; */
+                color: #ffffff !important;
+                font-size: 1.5rem;
+                text-decoration: none;
+                animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+            }
+        }
     </style>
+
 </head>
 
 <body>
     <section class="hero is-transparent is-fullheight ">
         <div class="hero-head">
-            <header class="navbar">
+            <header class="navbar" style="margin-top: 100px ;">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item">
@@ -360,8 +475,8 @@
         <center>
             <div class="hero-body">
                 <div class="container has-text-centered content">
-                    <p class=" pp2">Unleash Your Learning Potential with <span class="typed-text"></span><span
-                            class="cursor">&nbsp;</span></p>
+                    <p class=" pp2">Unleash Your Learning Potential <span class="responsiveWith">with</span> <span
+                            class="typed-text "></span><span class="cursor">&nbsp;</span></p>
                     <!-- <p class=" typed-text">
                     </p> -->
                     <h1 class="title">
@@ -489,8 +604,6 @@
     </section>
     <script src="./script.js"></script>
     <script>
-        // ♫ ♫ IT'S THE FINAL COUNTDOWN ♫ ♫ //
-
         var endingDate = new Date("Nov 14, 2018 13:37:00").getTime();
         var x = setInterval(function () {
             var current = new Date().getTime();
@@ -557,6 +670,7 @@
             if (textArray.length) setTimeout(type, newTextDelay + 250);
         });
     </script>
+
 </body>
 
 </html>
