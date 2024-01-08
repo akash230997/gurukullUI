@@ -20,7 +20,15 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 110%;
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .background {
             width: 100%;
             overflow: hidden;
         }
@@ -148,6 +156,7 @@
             color: #ffffff !important;
             position: relative;
             top: -180px;
+            padding: 0% 1%;
         }
 
         .typed-text {
@@ -365,6 +374,46 @@
             background-position: top;
         }
 
+        @media only screen and (min-width: 500px) and (max-width: 899px) {
+            .container2 ul {
+                margin: 0%;
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .background {
+                padding: 2%;
+            }
+
+            .hero-foot ul li {
+                display: inline;
+                padding: 0px;
+            }
+        }
+
+        @media only screen and (min-width: 900px) and (max-width: 1099px) {
+            .container2 ul {
+                margin: 0%;
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .background {
+                padding: 2%;
+            }
+
+            .hero-foot ul li {
+                display: inline;
+                padding: 0px;
+            }
+        }
+
         @media only screen and (min-width: 0px) and (max-width: 499px) {
             .container2 ul {
                 margin: 0%;
@@ -375,6 +424,10 @@
                 justify-content: center;
             }
 
+            .background {
+                padding: 2%;
+            }
+
             .hero-foot ul li {
                 display: inline;
                 padding: 0px;
@@ -383,16 +436,26 @@
             .Company_Nav {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 600 !important;
-                font-size: 2.2rem !important;
+                font-size: 2rem !important;
                 letter-spacing: 15px;
                 color: #ffffff !important;
+                text-align: center;
                 position: relative;
-                left: 10px;
+                /* left: 10px; */
                 top: -80px;
             }
 
+            .hero-body .title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300 !important;
+                font-size: 3.5rem !important;
+                letter-spacing: 15px;
+                color: #ffffff !important;
+                /* border: 1px solid red; */
+            }
+
             .typed-text {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
 
             .container {
@@ -446,9 +509,18 @@
                 font-family: "Montserrat", sans-serif;
                 /* letter-spacing: 15px; */
                 color: #ffffff !important;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-decoration: none;
                 animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+            }
+
+            .pp {
+                font-size: 1.1rem;
+                font-family: "Montserrat", sans-serif;
+                /* letter-spacing: 15px; */
+                color: #ffffff !important;
+                text-decoration: none;
+                animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
             }
         }
 
@@ -512,76 +584,82 @@
 </head>
 
 <body>
-    <section class="hero is-transparent is-fullheight ">
-        <div class="hero-head">
-            <header class="navbar" style="margin-top: 100px ;">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <h1 class="Company_Nav">GurukulGPT</h1>
-                        </a>
-                    </div>
-                    <div class="navbar-menu">
-                        <div class="navbar-end">
-                            <span class="navbar-item">
-                                <a class="button is-primary is-outlined" href="#">
-                                    <span class="icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </span>
-                                    <!-- <span class="top_title">Unleash Your Learning Potential with AI</span> -->
-                                </a>
-                            </span>
+    <div class="background">
+        <section class="hero is-transparent is-fullheight ">
+            <div class="hero-head">
+                <header class="navbar" style="margin-top: 100px ;">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <h1 class="Company_Nav">GurukulGPT</h1>
+                            </a>
+                        </div>
+                        <div class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a class="button is-primary is-outlined" href="#">
+                                        <span class="icon">
+                                            <i class="fa fa-twitter"></i>
+                                        </span>
+                                        <!-- <span class="top_title">Unleash Your Learning Potential with AI</span> -->
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </header>
-        </div>
-        <center>
-            <div class="hero-body">
-                <div class="container has-text-centered content">
-                    <p class=" pp2">Unleash Your Learning Potential <span class="responsiveWith">with</span> <span
-                            class="typed-text "></span><span class="cursor">&nbsp;</span></p>
-                    <h1 class="title">
-                        <span class="fade fadeOne">COMING</span>
-                        <span class="fade fadeTwo">SOON</span>
-                    </h1>
-                    <p class="pp">The future of education is Coming Sooner than you expect, powered by AI and made in
-                        India.</p>
-                </div>
+                </header>
             </div>
-            <div class="hero-foot">
-                <div class="columns has-text-centered">
-                    <div class="column">
-                        <div class="footerContainer">
-                            <div class="container2">
-                                <ul>
-                                    <li>
-                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🚀</span>Learn
-                                            Smarter, not Harder</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="feature-icon"
-                                                style="font-size: 18px;">🎯</span>Personalized Learning Paths</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🌌</span>Engage
-                                            & Explore with Fun</a>
-                                    </li>
-                                </ul>
+            <center>
+                <div class="hero-body">
+                    <div class="container has-text-centered content">
+                        <p class=" pp2">Unleash Your Learning Potential <span class="responsiveWith">with AI</span>
+                            <span class="typed-text "></span><span class="cursor">&nbsp;</span>
+                        </p>
+                        <h1 class="title">
+                            <span class="fade fadeOne">COMING</span>
+                            <span class="fade fadeTwo">SOON</span>
+                        </h1>
+                        <p class="pp">The future of education is Coming Sooner than you expect, powered by AI and made
+                            in
+                            India.</p>
+                    </div>
+                </div>
+                <div class="hero-foot">
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <div class="footerContainer">
+                                <div class="container2">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span class="feature-icon"
+                                                    style="font-size: 18px;">🚀</span>Learn
+                                                Smarter, not Harder</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="feature-icon"
+                                                    style="font-size: 18px;">🎯</span>Personalized Learning Paths</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="feature-icon"
+                                                    style="font-size: 18px;">🌌</span>Engage
+                                                & Explore with Fun</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </center>
+            </center>
 
-    </section>
+        </section>
+    </div>
     <script>
         // Typing
         const typedTextSpan = document.querySelector(".typed-text");
         const cursorSpan = document.querySelector(".cursor");
 
-        const textArray = [" AI Future", " AI fun", " AI a journey", " AI LIFE"];
+        const textArray = [" Future", " fun", " a journey", " LIFE"];
         const typingDelay = 200;
         const erasingDelay = 100;
         const newTextDelay = 2000; // Delay between current and next text
