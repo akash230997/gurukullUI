@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link rel="shortcut icon" href="./image/Screenshot 2024-01-05 190106.png" type="image/x-icon">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Roboto+Mono:300,400");
 
@@ -18,10 +16,11 @@
 
         html {
             background: linear-gradient(rgba(34, 41, 65, 0.45), rgba(46, 55, 86, 0.45)),
-                url("http://gurukulgpt.s3-website.ap-south-1.amazonaws.com/ai_art.png");
+                url("ai_art.png");
             background-size: cover;
             background-position: center;
-            height: 100%;
+            background-repeat: no-repeat;
+            min-height: 110%;
             width: 100%;
             overflow: hidden;
         }
@@ -367,9 +366,18 @@
         }
 
         @media only screen and (min-width: 0px) and (max-width: 499px) {
-            ul {
+            .container2 ul {
                 margin: 0%;
                 padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hero-foot ul li {
+                display: inline;
+                padding: 0px;
             }
 
             .Company_Nav {
@@ -533,102 +541,12 @@
                 <div class="container has-text-centered content">
                     <p class=" pp2">Unleash Your Learning Potential <span class="responsiveWith">with</span> <span
                             class="typed-text "></span><span class="cursor">&nbsp;</span></p>
-                    <!-- <p class=" typed-text">
-                    </p> -->
                     <h1 class="title">
                         <span class="fade fadeOne">COMING</span>
                         <span class="fade fadeTwo">SOON</span>
                     </h1>
                     <p class="pp">The future of education is Coming Sooner than you expect, powered by AI and made in
                         India.</p>
-
-                    <!-- <p class="pp1">Our AI-powered education app personalizes learning for every student, adapting to
-                        their style while offering interactive content. Designed for Indian education, it empowers
-                        learning with tailored paths, fostering curiosity, and making education engaging and effective.
-                    </p> -->
-                    <!-- <center>
-                        <div class="cards">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="card">
-                                            <div class="overlay"></div>
-                                            <div class="content">
-                                                <h4>UI DESIGN COURSE</h4>
-                                                <h6>3 Hrs | 13 Sections</h6>
-                                            </div>
-                                            <div class="fav">
-                                                <i class="far fa-heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </center> -->
-                    <!-- <h2 class="subtitle">
-                        <p id="countdown" class="countdown fade fadeThree"></p>
-                    </h2> -->
                 </div>
             </div>
             <div class="hero-foot">
@@ -638,16 +556,16 @@
                             <div class="container2">
                                 <ul>
                                     <li>
-                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🚀</span>
-                                            Learn Smarter, not Harder</a>
+                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🚀</span>Learn
+                                            Smarter, not Harder</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🎯</span>
-                                            Personalized Learning Paths</a>
+                                        <a href="#"><span class="feature-icon"
+                                                style="font-size: 18px;">🎯</span>Personalized Learning Paths</a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🌌</span>
-                                            Engage & Explore with Fun</a>
+                                        <a href="#"><span class="feature-icon" style="font-size: 18px;">🌌</span>Engage
+                                            & Explore with Fun</a>
                                     </li>
                                 </ul>
                             </div>
@@ -658,32 +576,8 @@
         </center>
 
     </section>
-    <script src="./script.js"></script>
     <script>
-        var endingDate = new Date("Nov 14, 2018 13:37:00").getTime();
-        var x = setInterval(function () {
-            var current = new Date().getTime();
-            var remainingTime = endingDate - current;
-
-            var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-            document.getElementById("countdown").innerHTML =
-                days +
-                "<span>D</span> " +
-                hours +
-                "<span>H</span> " +
-                minutes +
-                "<span>M</span> " +
-                seconds +
-                "<span>S</span> ";
-        }, 1000);
-
-        // Typi9ng
+        // Typing
         const typedTextSpan = document.querySelector(".typed-text");
         const cursorSpan = document.querySelector(".cursor");
 
@@ -728,7 +622,5 @@
     </script>
 
 </body>
-
-</html>
 
 </html>
